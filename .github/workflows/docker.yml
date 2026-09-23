@@ -1,0 +1,14 @@
+name: My First Workflow
+
+on:
+    push:
+        branches:
+           - main
+
+jobs:
+    hello:
+        runs-on: ubunto-latest
+
+        steps:
+          - name: Say Hello
+            run: echo "Hello From GitHub Actions) "
